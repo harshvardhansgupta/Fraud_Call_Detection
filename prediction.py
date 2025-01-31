@@ -21,7 +21,7 @@ try:
             # Use the microphone as the source for input
             with sr.Microphone() as source2:
                 # Adjust the energy threshold based on surrounding noise
-                r.adjust_for_ambient_noise(source2, duration=3)
+                r.adjust_for_ambient_noise(source2, duration=2)
 
                 # Listen for the user's input
                 audio2 = r.listen(source2)
