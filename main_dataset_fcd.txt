@@ -6480,6 +6480,167 @@ fraud	Your electricity will be disconnected in 30 minutes unless payment is made
 normal	Can you pick up my prescription from the pharmacy?
 fraud	I'm from technical support, your internet will be disconnected unless you verify now.
 normal	The presentation went really well, the client loved it!
+fraud	Hello sir, you have won a special 70% discount coupon on your next purchase, but to claim it, please share the OTP sent to your phone.
+fraud	Dear customer, your bank account has been selected for a premium shopping discount. Please verify your card details to activate the offer.
+fraud	Congratulations! You have been selected for a free shopping voucher worth $500. Please confirm your card number and expiry date to proceed.
+fraud	We are calling from XYZ bank. To unlock a secret cashback offer, kindly verify the OTP we just sent to your registered mobile number.
+fraud	This is a limited-time offer! Get an exclusive 90% discount on electronics. Please provide your bank account details to receive your coupon code.
+fraud	Hello! Your credit card has been charged $199 for a premium membership. If this wasn’t you, please share the OTP sent to your phone to cancel the transaction.
+fraud	Dear user, your PayPal account has received a $250 cashback. To withdraw it, please provide the OTP sent to your phone.
+fraud	Your Amazon Prime subscription is expiring today! Renew now to get a 50% discount by verifying your card details.
+fraud	We have credited a $100 bonus in your shopping wallet. Click the link and enter the OTP to activate your bonus.
+fraud	Your phone number has been randomly selected for a free vacation package. To confirm your booking, please verify your bank details.
+fraud	Dear customer, your recent transaction has been flagged. To avoid suspension, share your OTP immediately.
+fraud	Your bank account is about to be frozen due to security issues. Please verify your identity by entering the OTP sent to your number.
+fraud	Congratulations! You have won an iPhone 15 in our lucky draw. To claim, confirm your card details for verification.
+fraud	Your reward points are expiring soon! Redeem them now by clicking the link and entering your OTP.
+fraud	We are offering a free Netflix subscription for one year! Confirm your credit card details to activate this exclusive offer.
+fraud	Dear user, you have been overcharged in your last purchase. Claim your refund by verifying the OTP sent to your number.
+fraud	We noticed unusual activity in your bank account. For security, please confirm your PIN and OTP immediately.
+fraud	This is your last chance to get a special 80% discount on all products. To activate your coupon, provide your bank details now.
+fraud	Dear customer, your recent transaction was unsuccessful. To retry, please verify your CVV and OTP now.
+normal	Hello, I would like to book an appointment with Dr. Smith for next Monday.
+normal	Good morning! Your package has been dispatched and will be delivered within two days.
+normal	Your monthly bank statement is now available. Please log in to your account to view the details.
+normal	Thank you for shopping with us! Your order has been confirmed and will be shipped soon.
+normal	Hey, can we reschedule our meeting for tomorrow at 3 PM instead of today?
+normal	Your mobile data package has been successfully renewed. Enjoy your internet browsing!
+normal	This is a reminder for your upcoming flight. Please reach the airport at least two hours before departure.
+normal	Your subscription to our magazine has been renewed successfully. Expect your first issue next month!
+normal	Thank you for calling customer support. Your query has been recorded, and our team will get back to you soon.
+normal	Dear user, your feedback is important to us! Please rate our services on a scale of 1 to 5.
+normal	Your electricity bill for this month is now available. Kindly make the payment before the due date.
+normal	Hey John, are you available for dinner this weekend? Let’s catch up at our favorite restaurant.
+normal	We have received your application for the job position. Our HR team will contact you for further steps.
+normal	Your hotel booking has been confirmed. Enjoy your stay and let us know if you need any assistance.
+normal	This is to inform you that your child’s school is hosting a parent-teacher meeting this Friday.
+normal	Dear customer, thank you for visiting our store. We hope to see you again soon!
+normal	Your flight has been delayed due to bad weather. We apologize for the inconvenience.
+normal	The service center has received your request for appliance repair. Our technician will visit your home tomorrow.
+normal	Your car insurance policy has been successfully renewed. Check your email for the updated documents.
+normal	Hello, I’m calling from XYZ company regarding your recent interview. We’d like to discuss the next steps with you.
+fraud	Congratulations! You’ve won a discount coupon. Share the OTP to claim it.  
+fraud	Your cashback offer is expiring soon! Verify with OTP now.  
+fraud	Your bank is offering a special deal. Confirm with OTP to activate.  
+fraud	Get a 70% discount on your next order! Just verify with the OTP.  
+fraud	You’ve been selected for a free gift. Share OTP to claim it.  
+fraud	We noticed unusual activity in your account. Verify OTP to secure it.  
+fraud	Claim your $100 reward now! Just enter the OTP sent to your phone.  
+fraud	Your number won a lucky draw! Confirm OTP to receive your prize.  
+fraud	Your subscription refund is ready. Verify OTP to process it.  
+fraud	Act fast! Your premium membership is free for a year. Share OTP now.  
+fraud	Your wallet has been credited with $50. Enter OTP to withdraw.  
+fraud	This is your last chance for an exclusive discount. Confirm OTP now.  
+fraud	We have sent a verification code. Please share it to activate your deal.  
+fraud	Your credit card has been charged. Enter OTP to cancel the transaction.  
+fraud	Your loyalty points will expire today. Redeem them with OTP now.  
+fraud	Your phone bill overcharge is ready for refund. Verify OTP to receive it.  
+fraud	Dear user, your online banking is blocked. Confirm OTP to unblock.  
+fraud	Your lucky draw reward is pending. Enter OTP to receive the cash prize.  
+fraud	Win a free holiday package! Confirm OTP to proceed with booking.  
+fraud	Your credit card is on hold due to security reasons. Verify with OTP now.  
+fraud	Get a 90% off coupon! Just confirm OTP to activate your deal.  
+fraud	Your free movie subscription is waiting! Share OTP to get started.  
+fraud	You have a pending tax refund. Verify OTP to claim it.  
+fraud	Your Amazon order is stuck. Confirm OTP to process delivery.  
+fraud	Exclusive bank offer for you! Enter OTP to activate the benefits.  
+fraud	Win a free shopping spree! Just share OTP to confirm.  
+fraud	Your bank has sent a security update. Verify OTP to complete the process.  
+fraud	Your bonus cashback is ready. Enter OTP to redeem now.  
+fraud	Congratulations! You’ve been pre-approved for a credit increase. Verify with OTP.  
+fraud	Your Netflix account needs reactivation. Confirm OTP to continue watching.  
+fraud	Your premium car insurance is now free! Confirm OTP to apply.  
+fraud	Get a free hotel stay on your next trip! Just enter OTP to confirm.  
+fraud	Your debit card has been disabled. Verify OTP to reactivate it.  
+fraud	Your e-wallet has received a surprise bonus. Enter OTP to use it.  
+fraud	Your tax documents need urgent verification. Confirm OTP now.  
+fraud	Your mobile banking is about to be locked. Verify OTP to secure it.  
+fraud	We are updating your bank details. Confirm OTP for security reasons.  
+fraud	Your account upgrade is pending. Share OTP to proceed.  
+fraud	We noticed suspicious activity on your account. Enter OTP to secure it.  
+fraud	Your online shopping order is stuck. Verify OTP to continue.  
+fraud	A big sale is waiting for you! Enter OTP to unlock discounts.  
+fraud	Your internet banking is blocked. Confirm OTP to restore access.  
+fraud	We are refunding your double payment. Confirm OTP to receive it.  
+fraud	Act now! Your free mobile recharge is pending. Enter OTP to claim.  
+fraud	Your e-wallet is frozen due to a failed transaction. Confirm OTP to fix.  
+fraud	Your package needs verification before delivery. Enter OTP now.  
+fraud	Your credit card reward points expire today! Verify OTP to redeem them.  
+fraud	We are processing your refund request. Confirm OTP to receive the amount.  
+fraud	Your lucky draw reward is pending. Enter OTP to receive the cash prize.  
+fraud	You are eligible for an instant loan. Confirm OTP to apply.  
+fraud	Your premium bank offer is about to expire. Verify OTP to activate.  
+fraud	We detected an issue with your credit card. Confirm OTP to fix it.  
+fraud	Your free health insurance is waiting. Confirm OTP to apply now.  
+fraud	Your government subsidy is approved. Enter OTP to receive the funds.  
+fraud	Your VIP membership upgrade is free today. Share OTP to activate.  
+fraud	This is your bank. We detected suspicious activity. Please share your card details to verify.  
+fraud	Your debit card will be blocked soon due to security issues. Provide your details now.  
+fraud	We are calling from your internet provider. Your connection will be disabled unless you update payment details.  
+fraud	Your electricity bill is overdue. Pay now or your power supply will be disconnected.  
+fraud	This is a special government scheme. Share your personal details to claim your benefits.  
+fraud	We are offering an exclusive credit card. Just provide your bank details for verification.  
+fraud	Your loan request has been pre-approved. Pay the processing fee now to receive the amount.  
+fraud	This is tech support. Your computer has a virus! Pay now to fix it remotely.  
+fraud	Your insurance policy needs urgent renewal. Pay now to avoid policy lapse.  
+fraud	Congratulations! You have won a luxury car! Just pay the registration fee to claim it.  
+fraud	Your bank account is under threat! Move your money to a safe account we provide.  
+fraud	We are from the IRS. You have unpaid taxes. Pay immediately or face legal action.  
+fraud	Your mobile number has won a jackpot. To claim, share your bank details now.  
+fraud	Your social security number has been compromised. Pay now to get a new one issued.  
+fraud	We have a job opening for you! Pay the interview fee now to proceed.  
+fraud	Your health insurance claim is stuck. Pay the service charge to speed up the process.  
+fraud	This is a police officer. There is a legal case against you. Pay the fine now to avoid arrest.  
+fraud	Your package is stuck at customs. Pay the clearance fee to get it delivered.  
+fraud	We are from a charity organization. Please donate now to help disaster victims.  
+fraud	Your phone service will be suspended unless you clear an unpaid bill now.  
+fraud	We have mistakenly credited extra money to your account. Refund it now or face legal action.  
+fraud	Your credit card limit has been increased. Confirm your details to activate the new limit.  
+fraud	We are from Microsoft. Your computer is at risk. Pay now for instant protection.  
+fraud	Your PayPal account has been restricted. Share your login credentials to restore access.  
+fraud	You are eligible for a free government grant. Provide your personal details to claim it.  
+fraud	We are from an investment company. Double your money in 30 days! Invest now.  
+fraud	Your e-commerce order cannot be shipped due to verification issues. Share your card details.  
+fraud	Your pension fund has errors. Pay a correction fee now to receive your full amount.  
+fraud	We have an unclaimed parcel in your name. Pay shipping charges to receive it.  
+fraud	This is a job offer from a top company. Pay registration fees to start your onboarding process.  
+fraud	You have a pending court case. Pay now to settle out of court.  
+fraud	Your mobile SIM will be blocked today. Confirm your personal details to prevent deactivation.  
+fraud	We are calling from Apple support. Your iCloud account is compromised. Pay now for a security fix.  
+fraud	This is a security alert! Someone accessed your account. Confirm your credentials to secure it.  
+fraud	You have won a free overseas trip! Pay the processing fees to finalize your booking.  
+fraud	Your bank's KYC verification is incomplete. Update now to avoid account suspension.  
+fraud	Your medical test reports are ready. Pay now to access them online.  
+fraud	We are from an international lottery board. You have won $1 million! Pay the taxes to receive your prize.  
+fraud	Your business license needs renewal. Pay now to avoid penalties.  
+fraud	This is from Amazon. Your order has been delayed. Confirm payment to speed up delivery.  
+fraud	We have an emergency request from your friend. Transfer money now to help them.  
+fraud	Your account has been flagged for illegal transactions. Pay the penalty fee to clear your name.  
+fraud	Your antivirus subscription has expired. Pay now to continue protection.  
+fraud	You were seen in a hit-and-run accident. Pay now to settle the matter legally.  
+fraud	Your job application has been shortlisted. Pay the processing fee to schedule an interview.  
+fraud	Your university admission is confirmed! Pay the seat confirmation fee now.  
+fraud	This is a government alert. Your ID has been misused. Pay to issue a new one.  
+fraud	We are from a courier service. Your package has an unpaid charge. Pay now to receive it.  
+fraud	Your digital wallet has been blocked. Verify your identity by sharing your password.  
+fraud	You have won a surprise cash prize! Just transfer a small fee to process the payment.  
+fraud	Your WhatsApp number will be deactivated soon. Pay to keep your account active.  
+fraud	This is from the stock exchange. Invest now for guaranteed returns.  
+fraud	Your child has been selected for a special scholarship. Pay the processing fee now.  
+fraud	This is a lawyer’s office. A case has been filed against you. Pay now to settle out of court.  
+fraud	We are from a travel agency. Pay now to confirm your free flight ticket.  
+fraud	This is the police. A complaint has been filed in your name. Pay the penalty now to avoid further action.  
+fraud	We detected a hacking attempt on your email. Pay now for advanced security.  
+fraud	Your social media account will be permanently deleted. Pay to recover it now.  
+fraud	You have been blacklisted by banks. Pay now to remove restrictions.  
+fraud	Your utility bill has been miscalculated. Pay the correction charge now to update.  
+fraud	We are offering a limited-time stock market investment opportunity. Pay now to enroll.  
+fraud	Your car insurance is invalid. Pay to renew it immediately.  
+fraud	You are eligible for an exclusive premium banking service. Pay the activation charge now.  
+fraud	We are from a telecom company. Pay a one-time charge to upgrade to 5G services.  
+fraud	Your premium account has expired. Pay to reactivate it now.  
+fraud	You have an outstanding loan payment. Settle now to avoid penalties.  
+fraud	Your email is compromised. Pay for advanced encryption services.  
 
 
 
