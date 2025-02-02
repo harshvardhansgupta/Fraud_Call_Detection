@@ -75,6 +75,7 @@ class FraudDetectionApp(App):
     def build(self):
         Window.clearcolor = get_color_from_hex('#0a0a1e')
         self.running = False
+        self.listening_paused = False
         
         # Main Layout
         main_layout = BoxLayout(orientation='vertical', spacing=20, padding=30)
@@ -168,6 +169,7 @@ class FraudDetectionApp(App):
     def start_speech_recognition(self, instance):
         if not self.running:
             self.running = True
+            self.listening_paused = False
             self.pulse_widget.start_pulsing()
             self.animate_status("🎯 Shield Active - Monitoring")
             threading.Thread(target=self.recognize_speech, daemon=True).start()
@@ -190,45 +192,57 @@ class FraudDetectionApp(App):
             self.pulse_widget.set_color(1, 0, 0)  # Red for fraud
         else:
             self.pulse_widget.set_color(0, 1, 0)  # Green for safe
+        
+        # Schedule resuming listening after delay
+        self.listening_paused = True
+        Clock.schedule_once(self.resume_listening, 0.5)  # 0.5 second delay
+    
+    def resume_listening(self, dt):
+        """Resume listening after delay"""
+        if self.running:
+            self.listening_paused = False
     
     def recognize_speech(self):
         recognizer = sr.Recognizer()
         while self.running:
-            try:
-                with sr.Microphone() as source:
-                    recognizer.adjust_for_ambient_noise(source, duration=0.5)
+            if not self.listening_paused:
+                try:
+                    with sr.Microphone() as source:
+                        recognizer.adjust_for_ambient_noise(source, duration=0.5)
+                        Clock.schedule_once(lambda dt: setattr(
+                            self.speech_text_label, 'text', 
+                            "[color=#00f2ff]🎤 Analyzing Audio...[/color]"
+                        ))
+                        audio = recognizer.listen(source)
+                    
+                    text = recognizer.recognize_google(audio).lower()
+                    
+                    # Predict using the model
+                    text_features = vectorizer.transform([text])
+                    prediction = model.predict(text_features)
+                    
+                    if prediction[0] == 1:
+                        result = "[color=#ff0000]⚠ ALERT: Potential Fraud Detected![/color]"
+                        is_fraud = True
+                    else:
+                        result = "[color=#00ff00]✅ Communication Verified Safe[/color]"
+                        is_fraud = False
+                    
+                    # Schedule UI updates on the main thread
+                    Clock.schedule_once(lambda dt: self.update_ui(text, result, is_fraud))
+                    
+                except sr.UnknownValueError:
                     Clock.schedule_once(lambda dt: setattr(
-                        self.speech_text_label, 'text', 
-                        "[color=#00f2ff]🎤 Analyzing Audio...[/color]"
+                        self.speech_text_label, 'text',
+                        "[color=#ffa500]😕 Speech Unclear - Please Repeat[/color]"
                     ))
-                    audio = recognizer.listen(source)
-                
-                text = recognizer.recognize_google(audio).lower()
-                
-                # Predict using the model
-                text_features = vectorizer.transform([text])
-                prediction = model.predict(text_features)
-                
-                if prediction[0] == 1:
-                    result = "[color=#ff0000]⚠ ALERT: Potential Fraud Detected![/color]"
-                    is_fraud = True
-                else:
-                    result = "[color=#00ff00]✅ Communication Verified Safe[/color]"
-                    is_fraud = False
-                
-                # Schedule UI updates on the main thread
-                Clock.schedule_once(lambda dt: self.update_ui(text, result, is_fraud))
-                
-            except sr.UnknownValueError:
-                Clock.schedule_once(lambda dt: setattr(
-                    self.speech_text_label, 'text',
-                    "[color=#ffa500]😕 Speech Unclear - Please Repeat[/color]"
-                ))
-            except sr.RequestError:
-                Clock.schedule_once(lambda dt: setattr(
-                    self.speech_text_label, 'text',
-                    "[color=#ff0000]🔗 Network Error - Check Connection[/color]"
-                ))
+                except sr.RequestError:
+                    Clock.schedule_once(lambda dt: setattr(
+                        self.speech_text_label, 'text',
+                        "[color=#ff0000]🔗 Network Error - Check Connection[/color]"
+                    ))
+            
+            time.sleep(0.1)  # Small delay to prevent excessive CPU usage
             
             if not self.running:
                 break
