@@ -1,0 +1,19 @@
+ScreenManager:
+    MainScreen:
+
+<MainScreen>:
+    name: "main"
+    BoxLayout:
+        orientation: 'vertical'
+        MDToolbar:
+            title: "Fraud Call Detector"
+            md_bg_color: 0, 0.6, 0.8, 1
+        Label:
+            id: result_label
+            text: "Press the mic and speak"
+            font_size: "20sp"
+            halign: "center"
+        MDFillRoundFlatButton:
+            text: "🎤 Speak"
+            pos_hint: {"center_x": 0.5}
+            on_release: app.start_speech_recognition()
