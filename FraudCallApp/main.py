@@ -83,7 +83,7 @@ class FraudDetectionApp(App):
         # Title with glowing effect
         title_box = BoxLayout(size_hint=(1, 0.15))
         self.title_label = Label(
-            text="[color=#00f2ff]\U0001F50A AI Fraud Shield[/color]",
+            text="[color=#00f2ff]\U0001F50AAI Fraud Shield[/color]",
             font_size=32,
             bold=True,
             markup=True
@@ -142,13 +142,13 @@ class FraudDetectionApp(App):
         button_layout = BoxLayout(size_hint=(1, 0.15), spacing=20)
         
         self.start_button = FuturisticButton(
-            text="▶ Initialize Shield",
+            text="Initialize Shield",
             font_size=20
         )
         self.start_button.bind(on_press=self.start_speech_recognition)
         
         self.stop_button = FuturisticButton(
-            text="⏹ Deactivate",
+            text="  Deactivate",
             font_size=20
         )
         self.stop_button.bind(on_press=self.stop_speech_recognition)
@@ -171,22 +171,22 @@ class FraudDetectionApp(App):
             self.running = True
             self.listening_paused = False
             self.pulse_widget.start_pulsing()
-            self.animate_status("🎯 Shield Active - Monitoring")
+            self.animate_status("Shield Active - Monitoring")
             threading.Thread(target=self.recognize_speech, daemon=True).start()
     
     def stop_speech_recognition(self, instance):
         self.running = False
         self.pulse_widget.stop_pulsing()
-        self.animate_status("⏸ Shield Deactivated")
+        self.animate_status("Shield Deactivated")
     
     def animate_status(self, text):
         self.status_label.text = f"[color=#00f2ff]{text}[/color]"
-        anim = Animation(opacity=0.5, duration=0.5) + Animation(opacity=1, duration=0.5)
+        anim = Animation(opacity=0.5, duration=0.2) + Animation(opacity=1, duration=0.2)
         anim.start(self.status_label)
     
     def update_ui(self, text, result, is_fraud):
         """Update UI elements on the main thread"""
-        self.speech_text_label.text = f"[color=#00f2ff]📢 Detected Speech: {text}[/color]"
+        self.speech_text_label.text = f"[color=#00f2ff]Detected Speech: {text}[/color]"
         self.result_label.text = result
         if is_fraud:
             self.pulse_widget.set_color(1, 0, 0)  # Red for fraud
@@ -211,7 +211,7 @@ class FraudDetectionApp(App):
                         recognizer.adjust_for_ambient_noise(source, duration=0.5)
                         Clock.schedule_once(lambda dt: setattr(
                             self.speech_text_label, 'text', 
-                            "[color=#00f2ff]🎤 Analyzing Audio...[/color]"
+                            "[color=#00f2ff]Analyzing Audio...[/color]"
                         ))
                         audio = recognizer.listen(source)
                     
@@ -222,10 +222,10 @@ class FraudDetectionApp(App):
                     prediction = model.predict(text_features)
                     
                     if prediction[0] == 1:
-                        result = "[color=#ff0000]⚠ ALERT: Potential Fraud Detected![/color]"
+                        result = "[color=#ff0000]ALERT: Potential Fraud Detected!\nDisconnect the call immediately[/color]"
                         is_fraud = True
                     else:
-                        result = "[color=#00ff00]✅ Communication Verified Safe[/color]"
+                        result = "[color=#00ff00]Communication Verified Safe[/color]"
                         is_fraud = False
                     
                     # Schedule UI updates on the main thread
@@ -234,12 +234,12 @@ class FraudDetectionApp(App):
                 except sr.UnknownValueError:
                     Clock.schedule_once(lambda dt: setattr(
                         self.speech_text_label, 'text',
-                        "[color=#ffa500]😕 Speech Unclear - Please Repeat[/color]"
+                        "[color=#ffa500]Speech Unclear - Please Repeat[/color]"
                     ))
                 except sr.RequestError:
                     Clock.schedule_once(lambda dt: setattr(
                         self.speech_text_label, 'text',
-                        "[color=#ff0000]🔗 Network Error - Check Connection[/color]"
+                        "[color=#ff0000]Network Error - Check Connection[/color]"
                     ))
             
             time.sleep(0.1)  # Small delay to prevent excessive CPU usage
