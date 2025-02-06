@@ -45,3 +45,23 @@ The fraud call detection model is built using a **dataset of approximately 6000 
 
 The trained model and vectorizer are saved as `trained_model.pkl` and `vectorizer.pkl` for easy deployment and prediction.
 
+## Technologies Used
+
+1. **Kivy**:  
+   - Used for developing the app's user interface and ensuring cross-platform compatibility.  
+   - Provides a smooth and interactive design for the fraud detection application.
+2. **Scikit-learn**:  
+   - Utilized for training and implementing the machine learning model (Logistic Regression).  
+   - Includes tools like **TfidfVectorizer** for text vectorization and model evaluation.
+3. **Google Speech-to-Text API**:  
+   - Integrated for converting voice input into text, allowing users to analyze call data directly from audio.
+4. **Pickle**:  
+   - Used for serializing and saving the trained model (**trained_model.pkl**) and vectorizer (**vectorizer.pkl**) for later use.
+5. **Python**:  
+   - The core programming language used for all aspects of the project, including machine learning, app development, and API integration.
+6. **Buildozer**:  
+   - Employed for packaging the app into an **APK** file, making it compatible with Android devices.
+
+These technologies work together to create a robust, efficient, and user-friendly fraud detection application.
+
+
