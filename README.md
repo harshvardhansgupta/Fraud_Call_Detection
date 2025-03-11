@@ -12,6 +12,7 @@ Watch the app in action: [Click here for video demonstration](https://youtu.be/H
 5. **trained_model.pkl**: Serialized machine learning model trained for fraud call detection.
 6. **vectorizer.pkl**: Serialized vectorizer used to convert text data into numerical features for model input.
 7. **FraudCallApp**: Main project folder containing all necessary files for the fraud detection app.
+8. **Documentation.pdf**: Complete expalnation of the working of the app and model
 
 ## App Description
 
